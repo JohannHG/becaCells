@@ -1,13 +1,160 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examen general JS</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <div class="contenedor">
+
+    <h1>Ejercicios básicos</h1>
+
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 1</h2>
+      </div>
+
+      <div class="desc">
+        Generar un programa en JS, HTML, CSS que nos ayude a generar una lista de tareas por
+        hacer, estas son las siguientes características que deberás completar:
+        <ul>
+          <li>Agregar tareas</li>
+          <li>Tareas de lectura</li>
+          <li>Actualizar tareas</li>
+          <li>Eliminar tareas</li>
+          <li>Contar el número de tareas completadas e incompletas</li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/basicos/basicos.html#ej1">Ver ejercicio</a>
+      </div>
+    </div>
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 2</h2>
+      </div>
+
+      <div class="desc">
+        Escribir un programa que reciba dos strings y retorne el número de caracteres diferentes
+        (comparando posición por posición).
+        Nota: Puedes asumir que los strings siempre tienen la misma longitud. Sin embargo, si
+        quieres agregarle más dificultad puedes pensar cómo solucionarlo si un string es más largo
+        que el otro (la diferencia entre las longitudes agregaría al resultado).
+
+        <div>
+          <strong>CÓDIGO DE PRUEBA</strong>
+          <ul>
+            <li>console.log(distancia("hola", "hola")) // 0</li>
+            <li>console.log(distancia("sol", "tol")) // 1</li>
+            <li>console.log(distancia("carro", "correr")) // 3</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/basicos/basicos.html#ej2">Ver ejercicio</a>
+      </div>
+    </div>
+
+    <h1>Ejercicios intermedios</h1>
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 3</h2>
+      </div>
+
+      <div class="desc">
+        Implementa una función que realice una compresión simple de strings usando los conteos
+        de los caracteres repetidos consecutivos.
+        <div>
+          <strong>CÓDIGO DE PRUEBA</strong>
+          <ul>
+            <li>myMethod('aabcccccaaa') // «a2b1c5a3».</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/intermedios/intermedios.html#ej3">Ver ejercicio</a>
+      </div>
+    </div>
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 4</h2>
+      </div>
+
+      <div class="desc">
+        Escribe tu propia versión del método reduce del prototipo de Array.
+        <pre>
+          const array = [1,2,3,4,5];
+          const callback = (current, acumulator) => {
+            acumulator += current;
+            return acumulator;
+          };
+          console.log(array.myOwnReduce(callback)) // 12
+        </pre>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/intermedios/intermedios.html#ej4">Ver ejercicio</a>
+      </div>
+    </div>
+
+    <h1>Ejercicios avanzados</h1>
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 5</h2>
+      </div>
+
+      <div class="desc">
+        Escribir un programa que simule el request a un servicio mediante promesas (se puede
+        usar Promise.race). Si el servicio responde antes de 12 segundos deberá imprimir el resultado;
+        si no, imprimir un error indicando que el servicio no funciona.
+        <div>
+          <strong>CÓDIGO DE PRUEBA</strong>
+          <ul>
+            <li>console.log(myMethod(true)) // 'Esta es la respuesta del servicio'</li>
+            <li>console.log(myMethod(false)) // 'Error el servicio no está disponible'</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/avanzados/avanzados.html#ej5">Ver ejercicio</a>
+      </div>
+    </div>
+
+    <div class="ejercicio">
+      <div class="col-title">
+        <h2>Ejercicio 6</h2>
+      </div>
+
+      <div class="desc">
+        Implementar tu propia funcionalidad para generar eventos y escucharlos (tu propia versión
+        de addEventListener y dispatchEvent).
+        <pre>
+          myAddEventListener('my-event', ({data}) => {
+            console.log('Hola mi nombre es ' + data.name + ' ' + data.last);
+          });
+          myDispatchEvent('my-event', { name: 'Juan', last: 'Gonzalez' });
+        </pre>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./src/avanzados/avanzados.html#ej6">Ver ejercicio</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
