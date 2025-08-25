@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ejercicios Básicos - Examen JS</title>
+  <link rel="stylesheet" href="./css/basicos.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Ejercicios básicos</h1>
+
+    <div id="ej1" class="ejercicio" >
+      <div class="h-title"><h2>Ejercicio 1</h2></div>
+      <div style="flex:1">
+        <p class="desc">Lista de tareas — agregar / leer / actualizar / eliminar / contar.</p>
+
+        <form id="todo-form" style="display:flex;gap:8px;margin-top:8px;">
+          <input id="todo-input" placeholder="Escribe una tarea..." required style="flex:1;padding:8px;border-radius:6px;border:1px solid var(--borde--color)" />
+          <button class="btn" type="submit">Agregar</button>
+        </form>
+
+        <div class="counters" style="margin-top:10px;">
+          <span id="count-total">Total: 0</span> &nbsp;•&nbsp;
+          <span id="count-done">Completadas: 0</span> &nbsp;•&nbsp;
+          <span id="count-pending">Incompletas: 0</span>
+        </div>
+
+        <ul id="todo-list" style="margin-top:10px;padding-left:16px;"></ul>
+      </div>
+    </div>
+
+    <div id="ej2" class="ejercicio" hidden>
+      <div class="h-title"><h2>Ejercicio 2</h2></div>
+      <div style="flex:1">
+        <p class="desc">Función <code>distancia(a,b)</code> — cuenta caracteres distintos y diferencia de longitudes.</p>
+
+        <div style="margin-top:8px; display:flex; gap:8px; align-items:center;">
+          <input id="str-a" placeholder="String A" style="padding:8px;border-radius:6px;border:1px solid var(--borde--color); flex:1" />
+          <input id="str-b" placeholder="String B" style="padding:8px;border-radius:6px;border:1px solid var(--borde--color); flex:1" />
+          <button id="calc-btn" class="btn">Calcular</button>
+        </div>
+
+        <p style="margin-top:8px">Resultado: <strong id="dist-result">—</strong></p>
+
+        <h3 style="margin-top:12px">Ejemplos de prueba</h3>
+        <pre id="test-output"></pre>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./js/ejercicio1.js" defer></script>
+  <script src="./js/ejercicio2.js" defer></script>
+</body>
+</html>
